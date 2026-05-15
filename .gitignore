@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Raw/interim data can be large or manually sourced.
+data/raw/**/*.csv
+data/raw/**/*.json
+data/interim/**/*.csv
+data/interim/**/*.json
+
+# Generated report artifacts.
+reports/figures/*.png
+reports/*.html
+
+.env
+

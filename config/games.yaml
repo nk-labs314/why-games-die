@@ -1,0 +1,91 @@
+games:
+  - game: New World
+    app_id: 1063730
+    genre: MMO
+    expected_decline_profile: catastrophic_launch_decline
+    steam_lifecycle_quality: clean
+    inclusion_status: mvp
+    steam_represents_lifecycle: true
+    notes: Amazon MMO with strong Steam launch and visible post-launch decline.
+
+  - game: Z1 Battle Royale
+    app_id: 433850
+    genre: Battle Royale
+    expected_decline_profile: sharp_decline_dead
+    steam_lifecycle_quality: clean
+    inclusion_status: mvp
+    steam_represents_lifecycle: true
+    notes: Formerly H1Z1/King of the Kill; use name aliases in report text.
+
+  - game: Dota 2
+    app_id: 570
+    genre: MOBA
+    expected_decline_profile: alive_control
+    steam_lifecycle_quality: special_case
+    inclusion_status: mvp
+    steam_represents_lifecycle: true
+    notes: Valid Steam control, but Valve ownership makes it a special case.
+
+  - game: PUBG: BATTLEGROUNDS
+    app_id: 578080
+    genre: Battle Royale
+    expected_decline_profile: peaked_and_declined
+    steam_lifecycle_quality: partial
+    inclusion_status: expansion
+    steam_represents_lifecycle: true
+    notes: Regional/platform dynamics may complicate interpretation.
+
+  - game: Apex Legends
+    app_id: 1172470
+    genre: Battle Royale
+    expected_decline_profile: partial_decline
+    steam_lifecycle_quality: partial
+    inclusion_status: expansion
+    steam_represents_lifecycle: false
+    notes: Steam launch happened after the original lifecycle began.
+
+  - game: Team Fortress 2
+    app_id: 440
+    genre: Shooter
+    expected_decline_profile: neglect_bot_crisis_survived
+    steam_lifecycle_quality: special_case
+    inclusion_status: expansion
+    steam_represents_lifecycle: true
+    notes: Valve-owned long lifecycle with bot-crisis distortion.
+
+  - game: Realm of the Mad God Exalt
+    app_id: 200210
+    genre: Roguelike Shooter
+    expected_decline_profile: acquisition_engine_rewrite_controversy
+    steam_lifecycle_quality: partial
+    inclusion_status: expansion
+    steam_represents_lifecycle: false
+    notes: Steam may miss significant non-Steam launcher activity.
+
+  - game: Battlefield 2042
+    app_id: 1517290
+    genre: Shooter
+    expected_decline_profile: catastrophic_launch_attempted_recovery
+    steam_lifecycle_quality: partial
+    inclusion_status: expansion
+    steam_represents_lifecycle: false
+    notes: EA app and console populations make Steam incomplete.
+
+  - game: STAR WARS Battlefront II
+    app_id: 1237950
+    genre: Shooter
+    expected_decline_profile: loot_box_controversy_partial_recovery
+    steam_lifecycle_quality: distorted
+    inclusion_status: expansion
+    steam_represents_lifecycle: false
+    notes: Core controversy predates Steam release, so use carefully.
+
+  - game: ARK: Survival Evolved
+    app_id: 346110
+    genre: Survival/Crafting
+    expected_decline_profile: complicated_sequel_and_server_disruption
+    steam_lifecycle_quality: partial
+    inclusion_status: expansion
+    steam_represents_lifecycle: true
+    notes: Remaster/sequel/server decisions create interpretation noise.
+

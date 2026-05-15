@@ -1,0 +1,22 @@
+player:
+  smoothing_window_days: 7
+  major_drop_threshold: 0.30
+  max_drop_window_days: 30
+  launch_decay_exclusion_days: 14
+  merge_gap_days: 3
+
+sentiment:
+  pre_window_days: 30
+  post_window_days: 30
+  minimum_reviews_per_window: 20
+  use_vader: true
+
+events:
+  nearby_window_days: 30
+  update_event_types:
+    - major_update
+    - content_update
+    - balance_patch
+    - monetization_change
+    - roadmap_or_apology
+

@@ -1,0 +1,33 @@
+event_types:
+  major_update:
+    description: Large content, feature, expansion, or seasonal update.
+  content_update:
+    description: New map, mode, character, weapon, raid, or similar content.
+  balance_patch:
+    description: Gameplay tuning without major content.
+  monetization_change:
+    description: Battle pass, loot box, pay-to-win concern, pricing, DLC, or store change.
+  roadmap_or_apology:
+    description: Developer roadmap, public apology, reversal, or communication event.
+  technical_failure:
+    description: Server failure, exploit, serious bug, cheating/bot crisis, or outage.
+  competitor_release:
+    description: Major release likely to compete for the same player audience.
+  platform_or_sequel_disruption:
+    description: Sequel, remaster, platform migration, delisting, or server shutdown.
+  controversy:
+    description: Backlash not fully captured by monetization or technical failure.
+  unknown:
+    description: Evidence is too weak for a specific explanation.
+
+explanation_classes:
+  - launch_quality
+  - content_drought
+  - bad_update
+  - monetization_backlash
+  - competitor_displacement
+  - technical_failure
+  - platform_or_sequel_disruption
+  - normal_decay
+  - unknown
+
