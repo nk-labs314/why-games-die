@@ -1,0 +1,16 @@
+{
+  "appid": 570,
+  "name": "Dota 2",
+  "owners": "100,000,000 .. 200,000,000",
+  "positive": 100,
+  "negative": 20,
+  "average_forever": 1200,
+  "median_forever": 600,
+  "developer": "Valve",
+  "publisher": "Valve",
+  "genre": "Action, Strategy",
+  "tags": {
+    "MOBA": 1000,
+    "Strategy": 500
+  }
+}

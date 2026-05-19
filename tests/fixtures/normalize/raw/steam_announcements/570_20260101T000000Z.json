@@ -1,0 +1,14 @@
+{
+  "appnews": {
+    "appid": 570,
+    "newsitems": [
+      {
+        "gid": "abc123",
+        "date": 1768435200,
+        "title": "Gameplay Update",
+        "contents": "Balance changes and bug fixes.",
+        "url": "https://example.test/news"
+      }
+    ]
+  }
+}
