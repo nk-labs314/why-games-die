@@ -8,6 +8,7 @@ __pycache__/
 # Raw/interim data can be large or manually sourced.
 data/raw/**/*.csv
 data/raw/**/*.json
+data/raw/**/*.html
 data/interim/**/*.csv
 data/interim/**/*.json
 
@@ -16,4 +17,3 @@ reports/figures/*.png
 reports/*.html
 
 .env
-

@@ -26,7 +26,7 @@ games:
     steam_represents_lifecycle: true
     notes: Valid Steam control, but Valve ownership makes it a special case.
 
-  - game: PUBG: BATTLEGROUNDS
+  - game: "PUBG: BATTLEGROUNDS"
     app_id: 578080
     genre: Battle Royale
     expected_decline_profile: peaked_and_declined
@@ -80,7 +80,7 @@ games:
     steam_represents_lifecycle: false
     notes: Core controversy predates Steam release, so use carefully.
 
-  - game: ARK: Survival Evolved
+  - game: "ARK: Survival Evolved"
     app_id: 346110
     genre: Survival/Crafting
     expected_decline_profile: complicated_sequel_and_server_disruption
@@ -88,4 +88,3 @@ games:
     inclusion_status: expansion
     steam_represents_lifecycle: true
     notes: Remaster/sequel/server decisions create interpretation noise.
-
