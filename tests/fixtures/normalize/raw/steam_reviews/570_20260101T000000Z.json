@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {
+      "timestamp_created": 1767225600,
+      "voted_up": true,
+      "language": "english",
+      "playtime_at_review": 30,
+      "review": "good"
+    },
+    {
+      "timestamp_created": 1767225600,
+      "voted_up": false,
+      "language": "english",
+      "playtime_at_review": 20,
+      "review": "bad"
+    }
+  ]
+}
