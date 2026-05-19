@@ -43,7 +43,7 @@ def build_decline_summary(metrics: pd.DataFrame, decline_events: pd.DataFrame) -
                 "largest_decline_percent": round(float(game_declines["decline_percent"].max()), 2)
                 if not game_declines.empty
                 else 0.0,
-                "avg_monthly_pct_change": round(float(frame["avg_ccu"].pct_change().mean()), 4)
+                "median_monthly_pct_change": round(float(frame["avg_ccu"].pct_change().median()), 4)
                 if len(frame) > 1
                 else None,
             }

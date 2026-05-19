@@ -1,20 +1,28 @@
 event_id,game,app_id,pre_positive_ratio,during_positive_ratio,post_positive_ratio,nearby_event_count,nearby_event_types,classification
+440-2024-08-01,Team Fortress 2,440,,,,0,,unknown
+440-2025-01-01,Team Fortress 2,440,,,,0,,unknown
+200210-2012-10-01,Realm of the Mad God Exalt,200210,,,,0,,unknown
+200210-2014-02-01,Realm of the Mad God Exalt,200210,,,,0,,unknown
+200210-2018-09-01,Realm of the Mad God Exalt,200210,,,,0,,unknown
+200210-2020-06-01,Realm of the Mad God Exalt,200210,,,,0,,unknown
+200210-2021-10-01,Realm of the Mad God Exalt,200210,,,,0,,unknown
+346110-2022-08-01,ARK: Survival Evolved,346110,,,,0,,unknown
 433850-2017-09-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2017-10-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2017-11-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2018-01-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2018-02-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2018-04-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2018-08-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2018-12-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2019-02-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2019-04-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2019-05-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2019-06-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2019-07-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2020-02-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2020-03-01,Z1 Battle Royale,433850,,,,0,,unknown
-433850-2020-04-01,Z1 Battle Royale,433850,,,,0,,unknown
+433850-2018-04-01,Z1 Battle Royale,433850,,,,36,steam_announcement,unknown
+433850-2018-08-01,Z1 Battle Royale,433850,,,,14,steam_announcement,unknown
+433850-2018-12-01,Z1 Battle Royale,433850,,,,13,steam_announcement,unknown
+433850-2019-02-01,Z1 Battle Royale,433850,,,,15,steam_announcement,unknown
+433850-2019-04-01,Z1 Battle Royale,433850,,,,16,steam_announcement,unknown
+433850-2019-05-01,Z1 Battle Royale,433850,,,,13,steam_announcement,unknown
+433850-2019-06-01,Z1 Battle Royale,433850,,,,10,steam_announcement,unknown
+433850-2019-07-01,Z1 Battle Royale,433850,,,,6,steam_announcement,unknown
+433850-2020-02-01,Z1 Battle Royale,433850,,,,1,steam_announcement,unknown
+433850-2020-03-01,Z1 Battle Royale,433850,,,,1,steam_announcement,unknown
+433850-2020-04-01,Z1 Battle Royale,433850,,,,1,steam_announcement,unknown
 433850-2021-04-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2021-05-01,Z1 Battle Royale,433850,,,,0,,unknown
 433850-2021-06-01,Z1 Battle Royale,433850,,,,0,,unknown
@@ -33,6 +41,29 @@ event_id,game,app_id,pre_positive_ratio,during_positive_ratio,post_positive_rati
 1063730-2023-02-01,New World,1063730,,,,0,,unknown
 1063730-2023-11-01,New World,1063730,,,,0,,unknown
 1063730-2024-02-01,New World,1063730,,,,0,,unknown
-1063730-2024-12-01,New World,1063730,,,,0,,unknown
-1063730-2025-11-01,New World,1063730,,,,0,,unknown
-1063730-2025-12-01,New World,1063730,,,,0,,unknown
+1063730-2024-12-01,New World,1063730,,,,30,steam_announcement,unknown
+1063730-2025-11-01,New World,1063730,,,,16,steam_announcement,unknown
+1063730-2025-12-01,New World,1063730,,,,12,steam_announcement,unknown
+1237950-2020-07-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2020-08-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2020-10-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2021-02-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2021-03-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2021-04-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2022-08-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2023-03-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2023-06-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2024-04-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2024-06-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2025-08-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2025-09-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1237950-2025-10-01,STAR WARS Battlefront II,1237950,,,,0,,unknown
+1517290-2021-12-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2022-01-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2022-02-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2022-03-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2023-01-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2024-12-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2025-10-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2025-11-01,Battlefield 2042,1517290,,,,0,,unknown
+1517290-2025-12-01,Battlefield 2042,1517290,,,,0,,unknown

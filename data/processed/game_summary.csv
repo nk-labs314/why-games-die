@@ -2,10 +2,10 @@ game,app_id,player_data_available,review_data_available,announcement_data_availa
 New World,1063730,True,False,False,True,"50,000,000 .. 100,000,000",0.686,Action;Adventure;Character Customization;Co-op;Crafting,include
 Z1 Battle Royale,433850,True,False,False,True,"10,000,000 .. 20,000,000",0.5575,Action;Adventure;Battle Royale;Co-op;Early Access,include
 Dota 2,570,True,False,False,True,"100,000,000 .. 200,000,000",0.8152,Action;Action RPG;Character Customization;Co-op;Competitive,include
-PUBG: BATTLEGROUNDS,578080,False,False,False,True,,,,expansion
-Apex Legends,1172470,False,False,False,False,,,,expansion
-Team Fortress 2,440,False,False,False,True,,,,expansion
-Realm of the Mad God Exalt,200210,False,False,False,False,,,,expansion
-Battlefield 2042,1517290,False,False,False,False,,,,expansion
-STAR WARS Battlefront II,1237950,False,False,False,False,,,,expansion
-ARK: Survival Evolved,346110,False,False,False,True,,,,expansion
+PUBG: BATTLEGROUNDS,578080,True,False,False,True,"100,000,000 .. 200,000,000",0.5944,Action;Battle Royale;Co-op;Competitive;Difficult,expansion
+Apex Legends,1172470,True,False,False,False,"100,000,000 .. 200,000,000",0.6714,Action;Battle Royale;Character Customization;Cinematic;Co-op,expansion
+Team Fortress 2,440,True,False,False,True,"50,000,000 .. 100,000,000",0.8991,Action;Cartoon;Cartoony;Class-Based;Co-op,expansion
+Realm of the Mad God Exalt,200210,True,False,False,False,"500,000 .. 1,000,000",0.8306,2D;Action;Action RPG;Action Roguelike;Adventure,expansion
+Battlefield 2042,1517290,True,False,False,False,"10,000,000 .. 20,000,000",0.4674,Action;Adventure;Casual;Cinematic;Combat,expansion
+STAR WARS Battlefront II,1237950,True,False,False,False,"2,000,000 .. 5,000,000",0.8755,Action;Adventure;Aliens;Character Customization;Co-op,expansion
+ARK: Survival Evolved,346110,True,False,False,True,"20,000,000 .. 50,000,000",0.8384,Action;Adventure;Base-Building;Building;Co-op,expansion

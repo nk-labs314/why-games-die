@@ -40,6 +40,7 @@ def test_build_decline_summary_aggregates_game_level_risk():
     assert row["largest_decline_percent"] == 50.0
     assert row["first_month"] == "2026-01-01"
     assert row["last_month"] == "2026-02-01"
+    assert row["median_monthly_pct_change"] == -0.5
 
 
 def test_validate_processed_tables_flags_duplicate_metrics():
