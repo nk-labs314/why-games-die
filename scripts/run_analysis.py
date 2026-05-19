@@ -10,6 +10,7 @@ sys.path.insert(0, str(PROJECT_ROOT_FOR_IMPORTS / "src"))
 
 from game_decline.analysis.decline_detection import detect_decline_events
 from game_decline.analysis.event_windows import build_event_windows
+from game_decline.analysis.summary import build_decline_summary, build_monthly_features
 from game_decline.config import PROJECT_ROOT, load_yaml
 
 
@@ -28,11 +29,17 @@ def main() -> int:
 
     decline_events = detect_decline_events(metrics, major_drop_threshold=threshold)
     event_windows = build_event_windows(decline_events, reviews, events, window_days=window_days)
+    monthly_features = build_monthly_features(metrics)
+    decline_summary = build_decline_summary(metrics, decline_events)
 
     decline_events.to_csv(processed_root / "decline_events.csv", index=False)
     event_windows.to_csv(processed_root / "event_windows.csv", index=False)
+    monthly_features.to_csv(processed_root / "monthly_features.csv", index=False)
+    decline_summary.to_csv(processed_root / "decline_summary.csv", index=False)
     print(f"[OK] decline_events: {len(decline_events)} rows")
     print(f"[OK] event_windows: {len(event_windows)} rows")
+    print(f"[OK] monthly_features: {len(monthly_features)} rows")
+    print(f"[OK] decline_summary: {len(decline_summary)} rows")
     return 0
 
 

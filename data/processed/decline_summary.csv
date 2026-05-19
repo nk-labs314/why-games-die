@@ -1,0 +1,4 @@
+game,app_id,first_month,last_month,months_observed,peak_avg_ccu,latest_avg_ccu,latest_vs_peak_percent,decline_event_count,largest_decline_percent,avg_monthly_pct_change
+Z1 Battle Royale,433850,2016-02-01,2026-04-01,123,86807.87,238.45,-99.73,25,91.41,0.2341
+New World,1063730,2021-10-01,2026-04-01,55,410170.71,579.27,-99.86,12,82.56,0.0118
+Dota 2,570,2012-07-01,2026-04-01,166,709178.26,425918.58,-39.94,0,0.0,0.0161
