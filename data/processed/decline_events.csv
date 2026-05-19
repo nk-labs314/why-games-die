@@ -1,2 +1,1 @@
-event_id,game,app_id,decline_start,decline_end,start_ccu_rolling,end_ccu_rolling,drop_pct,duration_days,decline_type
-
+event_id,game,app_id,decline_start,decline_end,baseline_avg_ccu,trough_avg_ccu,decline_fraction,decline_percent,source
