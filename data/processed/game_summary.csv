@@ -1,6 +1,6 @@
 game,app_id,player_data_available,review_data_available,announcement_data_available,steam_represents_lifecycle,recommended_action
-New World,1063730,False,False,False,True,include
-Z1 Battle Royale,433850,False,False,False,True,include
+New World,1063730,True,False,False,True,include
+Z1 Battle Royale,433850,True,False,False,True,include
 Dota 2,570,True,False,False,True,include
 PUBG: BATTLEGROUNDS,578080,False,False,False,True,expansion
 Apex Legends,1172470,False,False,False,False,expansion

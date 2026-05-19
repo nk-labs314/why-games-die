@@ -8,8 +8,8 @@ Can public Steam-facing signals help explain or anticipate major player-count de
 
 | game | app_id | player_data_available | review_data_available | recommended_action |
 | --- | --- | --- | --- | --- |
-| New World | 1063730 | False | False | include |
-| Z1 Battle Royale | 433850 | False | False | include |
+| New World | 1063730 | True | False | include |
+| Z1 Battle Royale | 433850 | True | False | include |
 | Dota 2 | 570 | True | False | include |
 | PUBG: BATTLEGROUNDS | 578080 | False | False | expansion |
 | Apex Legends | 1172470 | False | False | expansion |
@@ -31,15 +31,95 @@ A major decline is currently defined as a month-over-month average-player drop a
 
 ## Detected Declines
 
-No major decline events were detected in the currently processed dataset.
+| event_id | game | app_id | decline_start | decline_end | baseline_avg_ccu | trough_avg_ccu | decline_fraction | decline_percent | source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 433850-2017-09-01 | Z1 Battle Royale | 433850 | 2017-08-01 | 2017-09-01 | 72379.84 | 46491.72 | 0.3577 | 35.77 | steamcharts_monthly |
+| 433850-2017-10-01 | Z1 Battle Royale | 433850 | 2017-09-01 | 2017-10-01 | 46491.72 | 31263.39 | 0.3275 | 32.75 | steamcharts_monthly |
+| 433850-2017-11-01 | Z1 Battle Royale | 433850 | 2017-10-01 | 2017-11-01 | 31263.39 | 20748.28 | 0.3363 | 33.63 | steamcharts_monthly |
+| 433850-2018-01-01 | Z1 Battle Royale | 433850 | 2017-12-01 | 2018-01-01 | 19106.42 | 12146.55 | 0.3643 | 36.43 | steamcharts_monthly |
+| 433850-2018-02-01 | Z1 Battle Royale | 433850 | 2018-01-01 | 2018-02-01 | 12146.55 | 7162.68 | 0.4103 | 41.03 | steamcharts_monthly |
+| 433850-2018-04-01 | Z1 Battle Royale | 433850 | 2018-03-01 | 2018-04-01 | 13673.01 | 6798.93 | 0.5027 | 50.27 | steamcharts_monthly |
+| 433850-2018-08-01 | Z1 Battle Royale | 433850 | 2018-07-01 | 2018-08-01 | 4794.47 | 3154.24 | 0.3421 | 34.21 | steamcharts_monthly |
+| 433850-2018-12-01 | Z1 Battle Royale | 433850 | 2018-11-01 | 2018-12-01 | 2984.65 | 1854.7 | 0.3786 | 37.86 | steamcharts_monthly |
+| 433850-2019-02-01 | Z1 Battle Royale | 433850 | 2019-01-01 | 2019-02-01 | 1673.0 | 1079.08 | 0.355 | 35.5 | steamcharts_monthly |
+| 433850-2019-04-01 | Z1 Battle Royale | 433850 | 2019-03-01 | 2019-04-01 | 4294.8 | 1648.93 | 0.6161 | 61.61 | steamcharts_monthly |
+| 433850-2019-05-01 | Z1 Battle Royale | 433850 | 2019-04-01 | 2019-05-01 | 1648.93 | 1145.39 | 0.3054 | 30.54 | steamcharts_monthly |
+| 433850-2019-06-01 | Z1 Battle Royale | 433850 | 2019-05-01 | 2019-06-01 | 1145.39 | 782.07 | 0.3172 | 31.72 | steamcharts_monthly |
+| 433850-2019-07-01 | Z1 Battle Royale | 433850 | 2019-06-01 | 2019-07-01 | 782.07 | 542.38 | 0.3065 | 30.65 | steamcharts_monthly |
+| 433850-2020-02-01 | Z1 Battle Royale | 433850 | 2020-01-01 | 2020-02-01 | 2525.85 | 1709.8 | 0.3231 | 32.31 | steamcharts_monthly |
+| 433850-2020-03-01 | Z1 Battle Royale | 433850 | 2020-02-01 | 2020-03-01 | 1709.8 | 469.54 | 0.7254 | 72.54 | steamcharts_monthly |
+| 433850-2020-04-01 | Z1 Battle Royale | 433850 | 2020-03-01 | 2020-04-01 | 469.54 | 307.8 | 0.3445 | 34.45 | steamcharts_monthly |
+| 433850-2021-04-01 | Z1 Battle Royale | 433850 | 2021-03-01 | 2021-04-01 | 2236.22 | 1023.61 | 0.5423 | 54.23 | steamcharts_monthly |
+| 433850-2021-05-01 | Z1 Battle Royale | 433850 | 2021-04-01 | 2021-05-01 | 1023.61 | 280.14 | 0.7263 | 72.63 | steamcharts_monthly |
+| 433850-2021-06-01 | Z1 Battle Royale | 433850 | 2021-05-01 | 2021-06-01 | 280.14 | 168.47 | 0.3986 | 39.86 | steamcharts_monthly |
+| 433850-2022-02-01 | Z1 Battle Royale | 433850 | 2022-01-01 | 2022-02-01 | 186.45 | 93.91 | 0.4963 | 49.63 | steamcharts_monthly |
+| 433850-2022-09-01 | Z1 Battle Royale | 433850 | 2022-08-01 | 2022-09-01 | 96.55 | 66.31 | 0.3132 | 31.32 | steamcharts_monthly |
+| 433850-2023-10-01 | Z1 Battle Royale | 433850 | 2023-09-01 | 2023-10-01 | 1027.66 | 531.33 | 0.483 | 48.3 | steamcharts_monthly |
+| 433850-2023-11-01 | Z1 Battle Royale | 433850 | 2023-10-01 | 2023-11-01 | 531.33 | 45.66 | 0.9141 | 91.41 | steamcharts_monthly |
+| 433850-2024-08-01 | Z1 Battle Royale | 433850 | 2024-07-01 | 2024-08-01 | 1017.71 | 432.42 | 0.5751 | 57.51 | steamcharts_monthly |
+| 433850-2026-04-01 | Z1 Battle Royale | 433850 | 2026-03-01 | 2026-04-01 | 836.0 | 238.45 | 0.7148 | 71.48 | steamcharts_monthly |
+| 1063730-2021-11-01 | New World | 1063730 | 2021-10-01 | 2021-11-01 | 410170.71 | 155169.01 | 0.6217 | 62.17 | steamcharts_monthly |
+| 1063730-2021-12-01 | New World | 1063730 | 2021-11-01 | 2021-12-01 | 155169.01 | 83175.96 | 0.464 | 46.4 | steamcharts_monthly |
+| 1063730-2022-02-01 | New World | 1063730 | 2022-01-01 | 2022-02-01 | 65106.82 | 32387.84 | 0.5025 | 50.25 | steamcharts_monthly |
+| 1063730-2022-03-01 | New World | 1063730 | 2022-02-01 | 2022-03-01 | 32387.84 | 21039.39 | 0.3504 | 35.04 | steamcharts_monthly |
+| 1063730-2022-12-01 | New World | 1063730 | 2022-11-01 | 2022-12-01 | 67758.63 | 41772.17 | 0.3835 | 38.35 | steamcharts_monthly |
+| 1063730-2023-01-01 | New World | 1063730 | 2022-12-01 | 2023-01-01 | 41772.17 | 28509.0 | 0.3175 | 31.75 | steamcharts_monthly |
+| 1063730-2023-02-01 | New World | 1063730 | 2023-01-01 | 2023-02-01 | 28509.0 | 19073.19 | 0.331 | 33.1 | steamcharts_monthly |
+| 1063730-2023-11-01 | New World | 1063730 | 2023-10-01 | 2023-11-01 | 37395.31 | 24532.44 | 0.344 | 34.4 | steamcharts_monthly |
+| 1063730-2024-02-01 | New World | 1063730 | 2024-01-01 | 2024-02-01 | 16347.25 | 10657.82 | 0.348 | 34.8 | steamcharts_monthly |
+| 1063730-2024-12-01 | New World | 1063730 | 2024-11-01 | 2024-12-01 | 22227.53 | 12453.1 | 0.4397 | 43.97 | steamcharts_monthly |
+| 1063730-2025-11-01 | New World | 1063730 | 2025-10-01 | 2025-11-01 | 21285.96 | 3712.2 | 0.8256 | 82.56 | steamcharts_monthly |
+| 1063730-2025-12-01 | New World | 1063730 | 2025-11-01 | 2025-12-01 | 3712.2 | 1222.01 | 0.6708 | 67.08 | steamcharts_monthly |
 
 ## Event Windows
 
-No event-window rows are available yet.
+| event_id | game | app_id | pre_positive_ratio | during_positive_ratio | post_positive_ratio | nearby_event_count | nearby_event_types | classification |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 433850-2017-09-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2017-10-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2017-11-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2018-01-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2018-02-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2018-04-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2018-08-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2018-12-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2019-02-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2019-04-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2019-05-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2019-06-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2019-07-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2020-02-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2020-03-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2020-04-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2021-04-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2021-05-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2021-06-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2022-02-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2022-09-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2023-10-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2023-11-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2024-08-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 433850-2026-04-01 | Z1 Battle Royale | 433850 |  |  |  | 0 |  | unknown |
+| 1063730-2021-11-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2021-12-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2022-02-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2022-03-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2022-12-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2023-01-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2023-02-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2023-11-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2024-02-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2024-12-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2025-11-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
+| 1063730-2025-12-01 | New World | 1063730 |  |  |  | 0 |  | unknown |
 
 ## Figures
 
 ![dota_2_player_timeline](figures/dota_2_player_timeline.png)
+
+![new_world_player_timeline](figures/new_world_player_timeline.png)
+
+![z1_battle_royale_player_timeline](figures/z1_battle_royale_player_timeline.png)
 
 ## What The Data Supports
 

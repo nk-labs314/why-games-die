@@ -9,6 +9,8 @@ PROJECT_ROOT_FOR_IMPORTS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT_FOR_IMPORTS / "src"))
 
 from game_decline.config import PROJECT_ROOT, filter_games, load_games
+from game_decline.steam.announcements import fetch_and_store_announcements
+from game_decline.steam.reviews import fetch_and_store_reviews
 from game_decline.steam.steamcharts import fetch_and_store_steamcharts
 from game_decline.steam.steamspy import fetch_and_store_appdetails
 
@@ -50,6 +52,18 @@ def parse_args() -> argparse.Namespace:
         help="Fetch SteamSpy app metadata.",
     )
     parser.add_argument(
+        "--reviews",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Fetch recent Steam Store review snapshots.",
+    )
+    parser.add_argument(
+        "--announcements",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Fetch public Steam news/announcement snapshots.",
+    )
+    parser.add_argument(
         "--raw-root",
         type=Path,
         default=PROJECT_ROOT / "data" / "raw",
@@ -65,7 +79,14 @@ def selected_games(args: argparse.Namespace):
     return filter_games(games, inclusion_status=scope, app_ids=app_ids)
 
 
-def fetch_game_sources(game, raw_root: Path, use_steamcharts: bool, use_steamspy: bool) -> list[FetchResult]:
+def fetch_game_sources(
+    game,
+    raw_root: Path,
+    use_steamcharts: bool,
+    use_steamspy: bool,
+    use_reviews: bool,
+    use_announcements: bool,
+) -> list[FetchResult]:
     results: list[FetchResult] = []
 
     if use_steamcharts:
@@ -98,6 +119,20 @@ def fetch_game_sources(game, raw_root: Path, use_steamcharts: bool, use_steamspy
         except Exception as exc:
             results.append(FetchResult(game.game, game.app_id, "steamspy", False, str(exc)))
 
+    if use_reviews:
+        try:
+            json_path = fetch_and_store_reviews(game.app_id, raw_root)
+            results.append(FetchResult(game.game, game.app_id, "reviews", True, json_path.name))
+        except Exception as exc:
+            results.append(FetchResult(game.game, game.app_id, "reviews", False, str(exc)))
+
+    if use_announcements:
+        try:
+            json_path = fetch_and_store_announcements(game.app_id, raw_root)
+            results.append(FetchResult(game.game, game.app_id, "announcements", True, json_path.name))
+        except Exception as exc:
+            results.append(FetchResult(game.game, game.app_id, "announcements", False, str(exc)))
+
     return results
 
 
@@ -110,7 +145,16 @@ def main() -> int:
 
     all_results: list[FetchResult] = []
     for game in games:
-        all_results.extend(fetch_game_sources(game, args.raw_root, args.steamcharts, args.steamspy))
+        all_results.extend(
+            fetch_game_sources(
+                game,
+                args.raw_root,
+                args.steamcharts,
+                args.steamspy,
+                args.reviews,
+                args.announcements,
+            )
+        )
 
     for result in all_results:
         status = "OK" if result.ok else "FAIL"
