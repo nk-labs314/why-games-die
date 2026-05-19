@@ -190,6 +190,4 @@ pytest tests -q
 - Public data can show timing and correlation, not causation.
 - Event annotations are still the weakest part of the project and should be expanded before making stronger interpretive claims.
 
-## Why This Is Recruiter-Relevant
 
-This repo demonstrates the full data science loop: messy public data collection, reproducible processing, feature engineering, rule-based analysis, validation, visualization, and clear reporting. The important part is not just that charts exist. The project has a defensible question, a repeatable pipeline, and explicit limits on what the data can prove.
