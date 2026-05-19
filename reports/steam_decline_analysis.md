@@ -31,6 +31,14 @@ A major decline is currently defined as a month-over-month average-player drop a
 
 ## Detected Declines
 
+## Cross-Game Summary
+
+| game | app_id | first_month | last_month | months_observed | peak_avg_ccu | latest_avg_ccu | latest_vs_peak_percent | decline_event_count | largest_decline_percent | avg_monthly_pct_change |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Z1 Battle Royale | 433850 | 2016-02-01 | 2026-04-01 | 123 | 86807.87 | 238.45 | -99.73 | 25 | 91.41 | 0.2341 |
+| New World | 1063730 | 2021-10-01 | 2026-04-01 | 55 | 410170.71 | 579.27 | -99.86 | 12 | 82.56 | 0.0118 |
+| Dota 2 | 570 | 2012-07-01 | 2026-04-01 | 166 | 709178.26 | 425918.58 | -39.94 | 0 | 0.0 | 0.0161 |
+
 | event_id | game | app_id | decline_start | decline_end | baseline_avg_ccu | trough_avg_ccu | decline_fraction | decline_percent | source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 433850-2017-09-01 | Z1 Battle Royale | 433850 | 2017-08-01 | 2017-09-01 | 72379.84 | 46491.72 | 0.3577 | 35.77 | steamcharts_monthly |
@@ -121,6 +129,10 @@ A major decline is currently defined as a month-over-month average-player drop a
 
 ![z1_battle_royale_player_timeline](figures/z1_battle_royale_player_timeline.png)
 
+![decline_event_count_by_game](figures/decline_event_count_by_game.png)
+
+![largest_decline_percent_by_game](figures/largest_decline_percent_by_game.png)
+
 ## What The Data Supports
 
 - The pipeline can show player-count trend changes and whether public signals appear near those changes.
@@ -137,3 +149,4 @@ A major decline is currently defined as a month-over-month average-player drop a
 - Collect all MVP SteamCharts histories, not just one app.
 - Add Steam review snapshots for the decline windows.
 - Fill manual event annotations for major updates, controversies, and competitor releases.
+- Treat low-player-count late-life games carefully; percentage drops can look dramatic even when absolute movement is small.

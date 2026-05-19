@@ -10,6 +10,7 @@ sys.path.insert(0, str(PROJECT_ROOT_FOR_IMPORTS / "src"))
 
 from game_decline.config import PROJECT_ROOT
 from game_decline.report.build_report import build_markdown_report, write_report
+from game_decline.visualization.comparison import build_comparison_figures
 from game_decline.visualization.timelines import build_player_timeline_figures
 
 
@@ -26,9 +27,18 @@ def main() -> int:
     decline_events = read_csv_or_empty(processed_root / "decline_events.csv")
     event_windows = read_csv_or_empty(processed_root / "event_windows.csv")
     game_summary = read_csv_or_empty(processed_root / "game_summary.csv")
+    decline_summary = read_csv_or_empty(processed_root / "decline_summary.csv")
 
     figure_paths = build_player_timeline_figures(metrics, figures_dir)
-    markdown = build_markdown_report(metrics, decline_events, event_windows, game_summary, figure_paths)
+    figure_paths.extend(build_comparison_figures(decline_summary, figures_dir))
+    markdown = build_markdown_report(
+        metrics,
+        decline_events,
+        event_windows,
+        game_summary,
+        figure_paths,
+        decline_summary=decline_summary,
+    )
     write_report(
         markdown,
         reports_root / "steam_decline_analysis.md",

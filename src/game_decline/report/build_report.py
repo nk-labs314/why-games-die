@@ -12,7 +12,9 @@ def build_markdown_report(
     event_windows: pd.DataFrame,
     game_summary: pd.DataFrame,
     figure_paths: list[Path],
+    decline_summary: pd.DataFrame | None = None,
 ) -> str:
+    decline_summary = decline_summary if decline_summary is not None else pd.DataFrame()
     lines = [
         "# Steam Game Decline Analysis",
         "",
@@ -37,6 +39,9 @@ def build_markdown_report(
         "## Detected Declines",
         "",
     ]
+
+    if not decline_summary.empty:
+        lines.extend(["## Cross-Game Summary", "", _dataframe_table(decline_summary), ""])
 
     if decline_events.empty:
         lines.extend(
@@ -84,6 +89,7 @@ def build_markdown_report(
             "- Collect all MVP SteamCharts histories, not just one app.",
             "- Add Steam review snapshots for the decline windows.",
             "- Fill manual event annotations for major updates, controversies, and competitor releases.",
+            "- Treat low-player-count late-life games carefully; percentage drops can look dramatic even when absolute movement is small.",
         ]
     )
     return "\n".join(lines) + "\n"

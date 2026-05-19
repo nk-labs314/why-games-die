@@ -56,18 +56,37 @@ python scripts/check_data_availability.py
 python scripts/fetch_raw_data.py --reviews --announcements
 python scripts/build_processed_data.py
 python scripts/run_analysis.py
+python scripts/validate_outputs.py
 python scripts/build_report.py
 ```
 
 Player-count history should be added manually under `data/raw/player_counts/` as CSV files when using SteamDB or SteamCharts exports. The normalizer accepts common date/count column names and preserves the source filename.
 
+Current MVP source strategy:
+
+- SteamCharts monthly average and peak concurrent-player tables are the player-count backbone.
+- SteamSpy provides owner ranges, review totals, tags, and metadata context.
+- Steam announcements and manual events are treated as contextual signals, not causal proof.
+- Kaggle/Mendeley datasets can be added under `data/raw/third_party_datasets/` as expansion sources.
+
 ## Main Outputs
 
 - `data/processed/game_summary.csv`
 - `data/processed/game_daily_metrics.csv`
+- `data/processed/monthly_features.csv`
 - `data/processed/decline_events.csv`
+- `data/processed/decline_summary.csv`
 - `data/processed/event_windows.csv`
 - `reports/figures/`
 - `reports/steam_decline_analysis.md`
 - `reports/steam_decline_analysis.html`
 
+## Notebooks
+
+The notebooks mirror the CLI pipeline:
+
+- `notebooks/00_data_availability.ipynb`
+- `notebooks/01_player_decline_detection.ipynb`
+- `notebooks/02_review_sentiment_overlay.ipynb`
+- `notebooks/03_event_annotation_analysis.ipynb`
+- `notebooks/04_cross_game_comparison.ipynb`

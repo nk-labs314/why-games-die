@@ -25,3 +25,28 @@ def test_build_markdown_report_states_data_limits_when_no_declines():
     assert "Steam Game Decline Analysis" in markdown
     assert "No major decline events were detected" in markdown
     assert "does not prove causation" in markdown
+
+
+def test_build_markdown_report_includes_decline_summary_when_available():
+    decline_summary = pd.DataFrame(
+        [
+            {
+                "game": "Example",
+                "app_id": 1,
+                "decline_event_count": 3,
+                "largest_decline_percent": 60.0,
+            }
+        ]
+    )
+
+    markdown = build_markdown_report(
+        pd.DataFrame(),
+        pd.DataFrame(),
+        pd.DataFrame(),
+        pd.DataFrame(),
+        [],
+        decline_summary=decline_summary,
+    )
+
+    assert "Cross-Game Summary" in markdown
+    assert "largest_decline_percent" in markdown
